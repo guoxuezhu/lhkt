@@ -21,9 +21,11 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:background="@color/btn_3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
 
         <RadioButton
             android:id="@+id/rbtn_sy"
