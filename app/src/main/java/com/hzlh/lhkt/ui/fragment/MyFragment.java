@@ -20,7 +20,6 @@ public class MyFragment extends Fragment {
     CircleImageView user_img;
 
 
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -37,7 +36,6 @@ public class MyFragment extends Fragment {
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background)
                 .centerCrop()
-//                .transform(new CenterCrop(getContext()), new GlideRoundTransform(MyFragment.this, 2))
                 .into(user_img);
 
     }
