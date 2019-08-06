@@ -1,6 +1,7 @@
 package com.hzlh.lhkt.ui.fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -9,9 +10,11 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.hzlh.lhkt.R;
+import com.hzlh.lhkt.ui.VideoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MyFragment extends Fragment {
@@ -39,6 +42,15 @@ public class MyFragment extends Fragment {
                 .into(user_img);
 
     }
+
+
+
+    @OnClick(R.id.video_my)
+    public void video_my() {
+        startActivity(new Intent(getActivity(), VideoActivity.class));
+//        getActivity().finish();
+    }
+
 
 
 }
