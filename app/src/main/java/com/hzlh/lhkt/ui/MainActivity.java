@@ -37,6 +37,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private List<Fragment> getFragments() {
+        fragments.clear();
         fragments.add(new HomeFragment());
         fragments.add(new MyFragment());
         return fragments;
