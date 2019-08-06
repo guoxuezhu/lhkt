@@ -37,24 +37,25 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.home_fragment, container, false);
         ButterKnife.bind(this, view);
-
-        hfragments = getFragments(); //添加布局
-//        if (rbtn_tab_zy.isChecked()) {
-//            showFragment(0);
-//        } else if (rbtn_tab_zhibo.isChecked()) {
-//            showFragment(1);
-//        } else if (rbtn_tab_dati.isChecked()) {
-//            showFragment(2);
-//        } else if (rbtn_tab_video.isChecked()) {
-//            showFragment(3);
-//        }
-        showFragment(0);
         rbtn_tab_zy.setChecked(true);
-        Log.i("==Fragment==", "=========HomeFragment======" + hfragments.size());
         return view;
 
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        hfragments = getFragments(); //添加布局
+        if (rbtn_tab_zy.isChecked()) {
+            showFragment(0);
+        } else if (rbtn_tab_zhibo.isChecked()) {
+            showFragment(1);
+        } else if (rbtn_tab_dati.isChecked()) {
+            showFragment(2);
+        } else if (rbtn_tab_video.isChecked()) {
+            showFragment(3);
+        }
+    }
 
     private List<Fragment> getFragments() {
         hfragments.clear();
@@ -62,7 +63,6 @@ public class HomeFragment extends Fragment {
         hfragments.add(new TabZhiboFragment());
         hfragments.add(new TabDatiFragment());
         hfragments.add(new TabVideoFragment());
-
         return hfragments;
     }
 
@@ -95,4 +95,9 @@ public class HomeFragment extends Fragment {
     }
 
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.i("==Fragment==", "=========onDestroy======");
+    }
 }
