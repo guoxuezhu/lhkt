@@ -35,7 +35,7 @@ public class MyFragment extends Fragment {
 
     private void init() {
         Glide.with(MyFragment.this)
-                .load(R.drawable.main_bg)
+                .load("http://img5.duitang.com/uploads/item/201410/11/20141011040700_3iXsj.thumb.700_0.jpeg")
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_background)
                 .centerCrop()
