@@ -60,7 +60,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.VideoViewHol
 
 
         holder.item_video_user_name.setText(videoData.username);
-        holder.item_video_num.setText(videoData.looknum+"");
+        holder.item_video_num.setText(videoData.looknum + "");
 
         holder.setItem(videoData);
     }
