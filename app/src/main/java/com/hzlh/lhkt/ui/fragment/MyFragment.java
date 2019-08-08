@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.hzlh.lhkt.R;
+import com.hzlh.lhkt.ui.LuzhiVideoActivity;
 import com.hzlh.lhkt.ui.VideoActivity;
 
 import butterknife.BindView;
@@ -45,12 +46,16 @@ public class MyFragment extends Fragment {
 
 
 
+    @OnClick(R.id.my_tiku)
+    public void my_tiku() {
+        startActivity(new Intent(getActivity(), LuzhiVideoActivity.class));
+//        getActivity().finish();
+    }
+
     @OnClick(R.id.video_my)
     public void video_my() {
         startActivity(new Intent(getActivity(), VideoActivity.class));
 //        getActivity().finish();
     }
-
-
 
 }
