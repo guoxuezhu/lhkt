@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide;
 import com.hzlh.lhkt.R;
 import com.hzlh.lhkt.ui.LoginActivity;
 import com.hzlh.lhkt.ui.LuzhiVideoActivity;
-import com.hzlh.lhkt.ui.VideoActivity;
+import com.hzlh.lhkt.ui.VlcVideoActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -59,7 +59,7 @@ public class MyFragment extends Fragment {
 
     @OnClick(R.id.video_my)
     public void video_my() {
-        startActivity(new Intent(getActivity(), VideoActivity.class));
+        startActivity(new Intent(getActivity(), VlcVideoActivity.class));
 //        getActivity().finish();
     }
 

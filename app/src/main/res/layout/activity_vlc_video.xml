@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.VideoActivity">
+    tools:context=".ui.VlcVideoActivity">
 
 
     <RelativeLayout
@@ -15,7 +15,7 @@
 
 
         <ImageView
-            android:id="@+id/btn_back_video"
+            android:id="@+id/btn_back_vlcvideo"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_centerVertical="true"
@@ -26,14 +26,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="短视频播放"
+            android:text="直播视频播放"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
     </RelativeLayout>
 
-    <VideoView
-        android:id="@+id/vidoview_dsp"
+    <org.videolan.vlc.VlcVideoView
+        android:id="@+id/rtsp_video"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

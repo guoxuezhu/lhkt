@@ -21,9 +21,13 @@ public class TabDatiFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab_dati_fragment, container, false);
         ButterKnife.bind(this, view);
-        init();
         return view;
+    }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        init();
     }
 
     private void init() {

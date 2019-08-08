@@ -31,7 +31,6 @@ public class TabZiyuanFragment extends Fragment implements ZyAdapter.CallBack {
         View view = inflater.inflate(R.layout.tab_zy_fragment, container, false);
         ButterKnife.bind(this, view);
         return view;
-
     }
 
     @Override
