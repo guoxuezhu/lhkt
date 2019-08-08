@@ -177,6 +177,12 @@ public class LuzhiVideoActivity extends BaseActivity {
 
     }
 
+    @OnClick(R.id.btn_stop)
+    public void btn_stop() {
+        stoplz();
+    }
+
+
     /**
      * 停止录制
      */
