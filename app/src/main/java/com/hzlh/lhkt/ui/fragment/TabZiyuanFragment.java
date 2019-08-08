@@ -1,7 +1,6 @@
 package com.hzlh.lhkt.ui.fragment;
 
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,19 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.hzlh.lhkt.R;
 import com.hzlh.lhkt.adapter.ZyAdapter;
 import com.hzlh.lhkt.data.mode.ZhiYuan;
-import com.hzlh.lhkt.ui.VideoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
-import de.hdodenhof.circleimageview.CircleImageView;
 
 public class TabZiyuanFragment extends Fragment implements ZyAdapter.CallBack {
 

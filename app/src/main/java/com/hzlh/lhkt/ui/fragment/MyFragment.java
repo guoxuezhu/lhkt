@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.hzlh.lhkt.R;
+import com.hzlh.lhkt.ui.LoginActivity;
 import com.hzlh.lhkt.ui.LuzhiVideoActivity;
 import com.hzlh.lhkt.ui.VideoActivity;
 
@@ -44,7 +45,11 @@ public class MyFragment extends Fragment {
 
     }
 
-
+    @OnClick(R.id.user_img)
+    public void user_img() {
+        startActivity(new Intent(getActivity(), LoginActivity.class));
+//        getActivity().finish();
+    }
 
     @OnClick(R.id.my_tiku)
     public void my_tiku() {
